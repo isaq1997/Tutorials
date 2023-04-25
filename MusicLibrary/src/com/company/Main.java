@@ -7,17 +7,15 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Song>song=new ArrayList<>();
 
-        song.add(new Song("Heyy","Rock"));
-        song.add(new Song("Heyy1","Rock"));
+        song.add(new Song("Hayway","Rock"));
+        song.add(new Song("Gluck","Rock"));
         ArrayList<MusicLibrary>mus =new ArrayList<>();
-        mus.add(new MusicLibrary("Sonne",song));
-        mus.add(new MusicLibrary("Sonne1",song));
-        mus.add(new MusicLibrary("Sonne2",song));
-        mus.add(new MusicLibrary("Sonne3",song));
+        mus.add(new MusicLibrary("Library_1",song));
+
         mus.get(0).addSong(song.get(1));
 
 
-        System.out.println(mus.get(0).getList_song().get(0));
+        System.out.println(song.get(0).getGenre());
 
     }
 }
