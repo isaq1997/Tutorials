@@ -6,7 +6,7 @@ import java.util.Random;
 public class MusicLibrary {
     private String title;
     private ArrayList<Song>list_song;
-
+    private ArrayList<String>songs=new ArrayList<>();
     public MusicLibrary(String title, ArrayList<Song> list_song) {
         this.title = title;
         this.list_song = list_song;
@@ -20,8 +20,12 @@ public class MusicLibrary {
         this.title = title;
     }
 
-    public ArrayList<Song> getList_song() {
-        return list_song;
+    public ArrayList<String> getList_song() {
+
+        for(int i=0;i< list_song.size() ;i++){
+            songs.add(list_song.get(i).getTitle());
+        }
+        return songs;
     }
 
     public void setList_song(ArrayList<Song> list_song) {

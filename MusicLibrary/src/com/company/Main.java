@@ -15,7 +15,7 @@ public class Main {
         ArrayList<MusicLibrary>mus =new ArrayList<>();
         mus.add(new MusicLibrary("Library_1",song));
         mus.get(0).addSong(song1.get(0));
-
+        System.out.println(mus.get(0).getList_song());
         System.out.println(mus.get(0).getTitle()+"--->"+song.get(2).getTitle());
         System.out.println(mus.get(0).get_random_song());
 
